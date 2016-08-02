@@ -1,7 +1,13 @@
-var matchList = getBySel(conf.MATCH_LIST), 
-    showMore = getBySel(conf.SHOW_MORE_BUTTON); 
 
-expandAll(showMore)
-.then(function () {
-    console.log('Done');
-})
+
+function automate() {
+    expandAll()
+    .then(function () {
+        console.log('Done');
+    })
+    .catch(function (error) {
+        throw new Error('BetOnValue Extension: ' + error)
+    })
+}
+
+automate()
