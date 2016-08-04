@@ -1,0 +1,43 @@
+.FirstBet .Odds,
+.FirstBet .ShowingPayout,
+.SecondBet .Odds,
+.SecondBet .ShowingPayout,
+.MobileBet .Odds,
+.MobileBet .ShowingPayout,
+.SecondMobileBet .Odds,
+.SecondMobileBet .ShowingPayout
+{
+	color: black;
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+.FirstBet
+{
+	background-color: hsl(0, 100%, 85%) !important;
+}
+
+.SecondBet
+{
+	background-color: hsl(120, 100%, 80%) !important;
+}
+
+.MobileBet
+{
+	background-color: hsl(40, 100%, 80%) !important;
+}
+
+.SecondMobileBet
+{
+	background-color: hsl(210, 100%, 80%) !important;
+}
+
+.FirstBet.MobileBet
+{
+	background-image: repeating-linear-gradient(135deg, transparent, transparent 35px, hsl(0, 100%, 85%) 35px, hsl(0, 100%, 85%) 70px);
+}
+
+.SecondBet.SecondMobileBet
+{
+	background-image: repeating-linear-gradient(135deg, transparent, transparent 35px, hsl(120, 100%, 80%) 35px, hsl(120, 100%, 80%) 70px);
+}

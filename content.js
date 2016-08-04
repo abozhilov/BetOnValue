@@ -1,13 +1,13 @@
+var reload_timer = null;
 
+showAdvancedTab()
+.then(function () {
+    return expandAll();
+})
+.then(function () {
+    filterResult();
+})
+.catch(function (error) {
+    throw new Error('BetOnValue Extension: ' + error)
+})
 
-function automate() {
-    expandAll()
-    .then(function () {
-        console.log('Done');
-    })
-    .catch(function (error) {
-        throw new Error('BetOnValue Extension: ' + error)
-    })
-}
-
-automate()
